@@ -5,25 +5,86 @@ body {
 }
 
 .header {
+  box-sizing: border-box;
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-size: 32px;
+  font-weight: 900;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.sidebar ul{
+  background: royalblue;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 12px;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  width: 20vw;
+  height: 20vw;
+  font-size: 1.25vw;
+}
+
+.flex-cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.content-flex-cont{
+  display: flex;
+  flex-direction: row;
+  flex:1;
+  gap: 50px;
+}
+
+.cards-flex-cont{
+  /* border: solid black 5px ; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 24px;
+  padding: 24px;
+  /* width: 100px; */
+  /* height: 100px; */
 }
